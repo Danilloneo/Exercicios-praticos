@@ -1,4 +1,4 @@
-const form = document.getElementById('form-deposito');
+const form = document.getElementById('form-verificador');
 const primeiroValor = document.getElementById('valorUm');
 const segundoValor = document.getElementById('valorDois');
 //const nomeBeneficiario = document.getElementById('nome-beneficiario');
@@ -21,6 +21,7 @@ if (formValido) {
 const containerMensagemSucesso = document.querySelector('.sucess-message')
 containerMensagemSucesso.innerHTML = mensagemSucesso;
 containerMensagemSucesso.style.display = 'block';
+document.querySelector('.error-message').style.display = 'none';
 valorUm.value = '';
 valorDois.value = '';
 }
@@ -28,6 +29,7 @@ valorDois.value = '';
 else {
     primeiroValor.style.border = '1px solid red';
     document.querySelector('.error-message').style.display = 'block';
+    document.querySelector('.sucess-message').style.display = 'none';
     valorUm.value = '';
 }
 })
