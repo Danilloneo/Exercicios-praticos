@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Danillo Guimarães">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Formulário JS</title>
+</head>
+<body>
+    <section id="form"> 
+    <div class="container">
+    <form id="form-deposito">
+    <h1>Exercício JS EBAC</h1><br>
+    <h2>Instruções:</h2><br><p>Este é um verificador se o campo A é menor que o campo B.</p><br>
+    <input type="number" id="valorUm" title="Insira o primeiro valor" required placeholder="Campo A ex: 22">
+    <p class="error-message">O primeiro campo precisa ser menor que o segundo!</p>
+    <input type="number" id="valorDois" title="Insira o segundo valor" required placeholder="Campo B ex: 23">
+    <button type="submit" id="btn-depositar" class="deposit">VERIFICAR</button>
+    </form>
+    <p class='sucess-message'></p>
+    </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>

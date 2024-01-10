@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+form {
+    margin-top: 100px;
+}
+
+form input,button {
+    padding: 5px;
+    margin-top: 10px;
+    display: block;
+    width: 50%;
+    height: 30px;
+    resize: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form button {
+    font-weight:800;
+    cursor: pointer;
+    font-family:sans-serif;
+    background-color: rgb(42, 190, 42);
+    font-style: italic;
+    font-size: 15px;
+    color: white;
+}
+
+form button:hover {
+        font-weight:800;
+        cursor: pointer;
+        font-family:sans-serif;
+        background-color: rgb(14, 224, 14);
+        font-style: italic;
+        font-size: 15px;
+        color: white;
+}
+
+.sucess-message {
+    padding: 16px;
+    color: green;
+}
+
+.error-message {
+    font-size:12px;
+    padding: 16px;
+    color: red;
+    margin-bottom: 8px;
+    display: none;
+    outline: red;
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
